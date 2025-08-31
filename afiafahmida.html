@@ -16,7 +16,7 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
-    
+
 <!--
 
 Tooplate 2115 Marvel
@@ -37,7 +37,7 @@ https://www.tooplate.com/view/2115-marvel
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>               
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,7 +62,7 @@ https://www.tooplate.com/view/2115-marvel
                     </li>
                 </ul>
 
-                
+
             </div>
         </div>
     </nav>
@@ -71,7 +71,7 @@ https://www.tooplate.com/view/2115-marvel
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-lg-7 col-md-12 col-15 d-flex align-items-center">
                     <div class="about-text">
                         <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
@@ -85,9 +85,9 @@ https://www.tooplate.com/view/2115-marvel
                         </h1>
 
                         <p>I have a very keen interest and dedication in learning new things. I enjoy merging new Technologies with creativity. </p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="CV of Afia Fahmida.pdf" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download My CV</a>
+
+                        <div class="custom-btn-group mt-4 d-flex flex-column flex-md-row justify-content-center">
+                          <a href="CV of Afia Fahmida.pdf" class="btn mr-lg-2 custom-btn mb-2 mb-md-0"><i class='uil uil-file-alt'></i> Download My CV</a>
                           <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Let's Work Together?</a>
                         </div>
                     </div>
@@ -95,7 +95,15 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-lg-5 col-md-12 col-12">
                   <div class="about-image svg">
-                   <img src="images/profile.jpg" class="img-fluid" alt="svg image">
+                   <!-- Optimized profile image with srcset and lazy loading -->
+                   <img src="images/profile.jpg"
+                        srcset="images/profile-small.jpg 480w,
+                                images/profile-medium.jpg 800w,
+                                images/profile.jpg 1200w"
+                        sizes="(max-width: 600px) 480px,
+                               (max-width: 1200px) 800px,
+                               1200px"
+                        class="img-fluid" alt="Afia Fahmida" loading="lazy">
                   </div>
                 </div>
 
@@ -104,7 +112,7 @@ https://www.tooplate.com/view/2115-marvel
         </div>
     </section>
 
-    
+
 <!-- PROJECTS -->
 <section class="project py-5" id="project">
     <div class="container">
@@ -118,36 +126,36 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="owl-carousel owl-theme">
 
                     <!-- Project 1 -->
-                    <div class="item" style="max-width: 900px; height: 400px; margin: auto;">
-                        <div class="project-info text-center p-4" style=" background: #111; border-radius: 10px;">
+                    <div class="item project-card-item">
+                        <div class="project-info text-center p-4">
                             <h4 style="color: #11e711;">ALlyHub</h4>
                             <p style="color: #ccc;">Many newcomers in the ever-changing IT industry face challenges in gaining expertise, whereas clients with creative concepts struggle to find potential professionals. AllyHub's goal is to close this divide by linking inexperienced IT developers with clients in need of their skills. Our platform promotes teamwork, enabling users to acquire hands-on experience and bring concepts to life. AllyHub is committed to fostering a welcoming space that brings together talented individuals and opportunities, enabling developers and clients to reach their objectives. It goes beyond being a mere networking platform by addressing the issues of limited work experience and stagnant project concepts. AllyHub will enable users to turn ideas into reality and develop the skills needed to succeed in the competitive IT field by supporting flexible interactions, collaboration, and transparent work histories</p>
-                            <a href="https://github.com/afiafahmida/ALlyHub" 
-                               target="_blank" 
+                            <a href="https://github.com/afiafahmida/ALlyHub"
+                               target="_blank"
                                style="color: #11e711; font-weight: bold; text-decoration: none;">
                                🔗 View on GitHub
                             </a>
                         </div>
                     </div>
 
-                    <div class="item" style="max-width: 900px !important; height: 385px !important; margin: auto;">
-                      <div class="project-info text-center p-4" style="background: #111; border-radius: 10px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="item project-card-item">
+                      <div class="project-info text-center p-4">
                             <h4 style="color: #11e711;">TeleHeal- 24x7 Healthcare App</h4>
                             <p style="color: #ccc;">This project “TeleHeal” is to build a healthcare application that will contribute to keep our body fit and healthy amidst our busy schedule. Besides it will provide shortcuts to contact different medical persons and get help to keep track of medicine intake according to their individual doses. In brief, TeleHeal will upgrade telemedicine process.</p>
-                            <a href="https://github.com/afiafahmida/Teleheal-24-7-Health-Care-App" 
-                               target="_blank" 
+                            <a href="https://github.com/afiafahmida/Teleheal-24-7-Health-Care-App"
+                               target="_blank"
                                style="color: #11e711; font-weight: bold; text-decoration: none;">
                                🔗 View on GitHub
                             </a>
                         </div>
                     </div>
 
-                    <div class="item" style="max-width: 900px !important; height: 385px !important; margin: auto;">
-                      <div class="project-info text-center p-4" style="background: #111; border-radius: 10px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="item project-card-item">
+                      <div class="project-info text-center p-4">
                         <h4 style="color: #11e711;">Online Store with Reviews</h4>
                         <p style="color: #ccc;">This project has the potential in operational efficiency, customer satisfaction, and business growth for both sellers and buyers. It will streamline the product purchasing process, making it more accessible and convenient for buyers, while enabling sellers to make data-driven decisions for their operations.</p>
-                        <a href="https://github.com/afiafahmida/Online-Store-with-Reviews" 
-                        target="_blank" 
+                        <a href="https://github.com/afiafahmida/Online-Store-with-Reviews"
+                        target="_blank"
                         style="color: #11e711; font-weight: bold; text-decoration: none;">
                         🔗 View on GitHub
                         </a>
@@ -155,24 +163,24 @@ https://www.tooplate.com/view/2115-marvel
                    </div>
 
 
-                    <div class="item" style="max-width: 900px !important; height: 385px !important; margin: auto;">
-                      <div class="project-info text-center p-4" style="background: #111; border-radius: 10px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="item project-card-item">
+                      <div class="project-info text-center p-4">
                             <h4 style="color: #11e711;">SilentSignal: Noiseless Vehicle Horn System</h4>
                             <p style="color: #ccc;">This project is designed to reduce noise pollution caused by honking on busy roads. The system aims to replace traditional vehicle horns with an internal communication network between vehicles, where drivers and passengers can receive alerts through an internal notification system. This way, honking is only heard by the people inside the vehicles, helping reduce distractions and contributing to a quieter environment.</p>
-                            <a href="https://github.com/afiafahmida/SilentSignal" 
-                               target="_blank" 
+                            <a href="https://github.com/afiafahmida/SilentSignal"
+                               target="_blank"
                                style="color: #11e711; font-weight: bold; text-decoration: none;">
                                🔗 View on GitHub
                             </a>
                         </div>
                     </div>
 
-                    <div class="item" style="max-width: 900px !important; height: 385px !important; margin: auto;">
-                      <div class="project-info text-center p-4" style="background: #111; border-radius: 10px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="item project-card-item">
+                      <div class="project-info text-center p-4">
                             <h4 style="color: #11e711;">Movie Ticket Management System</h4>
                             <p style="color: #ccc; ">The main goal of our management software is to make the booking system and management easier for movie theatres. Our user is the administrative of movie theatre. Another goal is to make updating criteria easy for the movie ticket booking employees so they can update movie information and posters swiftly and smoothly.</p>
-                            <a href="https://github.com/afiafahmida/Booking-Management-System" 
-                               target="_blank" 
+                            <a href="https://github.com/afiafahmida/Booking-Management-System"
+                               target="_blank"
                                style="color: #11e711; font-weight: bold; text-decoration: none;">
                                🔗 View on GitHub
                             </a>
@@ -191,7 +199,7 @@ https://www.tooplate.com/view/2115-marvel
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
         <div class="container">
             <div class="row">
-               
+
                 <div class="col-lg-6 col-12">
                   <h2 class="mb-4 mobile-mt-2">Educations</h2>
 
@@ -215,7 +223,7 @@ https://www.tooplate.com/view/2115-marvel
                                 <p>Military Collegiate School Khulna</p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
                                 <span>2021</span>
@@ -228,7 +236,7 @@ https://www.tooplate.com/view/2115-marvel
 
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -237,7 +245,7 @@ https://www.tooplate.com/view/2115-marvel
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="research">
         <div class="container">
             <div class="row">
-               
+
                 <div class="col-lg-6 col-12">
                   <h2 class="mb-4 mobile-mt-2">Research Domains</h2>
 
@@ -248,9 +256,9 @@ https://www.tooplate.com/view/2115-marvel
                              </div>
                              <div class="timeline-info">
                                   <h3><span>Code Refactoring & AI</span><small>Academic Thesis</small></h3>
-                                  <p>This is my current academic research. I and my team are working on 
+                                  <p>This is my current academic research. I and my team are working on
                                     filling the gaps of implementing AI techniques to detect Code Smells.
-                                    
+
                                   </p>
                              </div>
                         </div>
@@ -261,19 +269,19 @@ https://www.tooplate.com/view/2115-marvel
                             </div>
                             <div class="timeline-info">
                                 <h3><span>Natural Language Processing</span><small>In Progress</small></h3>
-                                <p>In this work, the common(Cholito) and formal(Sadhu) linguistic style of Bengali Language has been 
+                                <p>In this work, the common(Cholito) and formal(Sadhu) linguistic style of Bengali Language has been
                                   evaluated for contributing in Bengali Language NLP Domain, search engines and so on.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
                                 <span>03</span>
                             </div>
                             <div class="timeline-info">
                                 <h3><span>Internet Of Things</span><br><small>In Progress</small></h3>
-                                <p>This work consists of small attempts of introducing the concepts of Blockchain into the security sectors of 
+                                <p>This work consists of small attempts of introducing the concepts of Blockchain into the security sectors of
                                   low-powered IOT devices.
                                 </p>
                             </div>
@@ -281,7 +289,7 @@ https://www.tooplate.com/view/2115-marvel
 
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -289,7 +297,7 @@ https://www.tooplate.com/view/2115-marvel
         <!-- Achievements -->
     <section class="project py-5" id="Achievements">
         <div class="container">
-                
+
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
 
@@ -300,55 +308,55 @@ https://www.tooplate.com/view/2115-marvel
                       <div class="owl-carousel owl-theme">
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/mindspark_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/mindspark_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/fiesta_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/fiesta_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/rovers1_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/rovers1_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/rovers2_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/rovers2_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/codeclash_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/codeclash_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/resolute_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/resolute_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/eo_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/eo_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/eo2_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/eo2_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images/eogrande_imresizer.jpg" class="img-fluid" alt="project image">
+                            <img src="images/eogrande_imresizer.jpg" class="img-fluid" alt="project image" loading="lazy">
                           </div>
                         </div>
 
@@ -361,13 +369,13 @@ https://www.tooplate.com/view/2115-marvel
 
 
     <!-- CONTACT -->
-<section class="contact py-5" id="contact" 
+<section class="contact py-5" id="contact"
          style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
   <div class="container">
     <div class="row justify-content-center">
-      
+
       <div class="col-lg-5 col-12">
-        <div class="contact-info d-flex justify-content-between align-items-center py-5 px-5" 
+        <div class="contact-info d-flex flex-column flex-md-row justify-content-between align-items-center py-5 px-5"
      style="background: #111; border-radius: 10px; min-width: 100px; max-width: 700px;">
 
           <div class="contact-info-item">
@@ -388,7 +396,7 @@ https://www.tooplate.com/view/2115-marvel
     </div>
   </div>
 
-  
+
 </section>
 
 
@@ -399,11 +407,11 @@ https://www.tooplate.com/view/2115-marvel
           <div class="container">
                <div class="row">
 
-                    <div class="col-lg-12 col-12">                                
+                    <div class="col-lg-12 col-12">
                         <p class="copyright-text text-center">Let's Do More Than Exists, Together!</p>
-                        
+
                     </div>
-                    
+
                </div>
           </div>
      </footer>
